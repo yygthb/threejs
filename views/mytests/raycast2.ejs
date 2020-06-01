@@ -1,0 +1,31 @@
+<%- include ('../header', {title}) %>
+<link rel="stylesheet" href="<%- assetFingerprint('/stylesheets/responsive.css') %>">
+<link rel="stylesheet" href="<%- assetFingerprint('/stylesheets/product-content.css') %>">
+
+
+</head>
+
+<body>
+  
+  <div class="content__product">
+    <div class="content__product_img">
+      <div class="canvas">
+        <canvas id="c"></canvas>
+      </div>
+      <button id="button__content__product_open">Ok</button>
+      <button id="button__content__product_close">Close</button>
+      <button id="button__content__product_orange">Orange</button>
+    </div>
+    <div class="content__product_composition">
+      <ul class="content__product_composition_ul">
+
+      </ul>
+    </div>
+  </div>
+
+  <script src="<%- assetFingerprint('/javascripts/three.js') %>" ></script>
+  <script src="<%- assetFingerprint('/javascripts/threex.domevents.js') %>" ></script>
+  <script src="<%- assetFingerprint('/javascripts/mytests/raycast2.js') %>" type="module"></script>
+</body>
+
+</html>

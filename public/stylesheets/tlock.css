@@ -1,0 +1,55 @@
+.tlock {
+  display: flex;
+}
+
+.tlock__img {
+  /* width: 1000px; */
+  position: relative;
+  flex: 5;
+}
+.tlock__composition {
+  flex: 1;
+  padding: 20px;
+}
+.tlock__composition li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+#button__tlock_open {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  z-index: 10;
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+#button__tlock_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  z-index: 9;
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+#button__tlock_orange {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+
+  z-index: 9;
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid orange;
+  color: orange;
+  border-radius: 2px;
+}

@@ -1,0 +1,35 @@
+<%- include ('../header', {title}) %>
+<link rel="stylesheet" href="<%- assetFingerprint('/stylesheets/responsive.css') %>">
+<link rel="stylesheet" href="<%- assetFingerprint('/stylesheets/tlock.css') %>">
+
+
+</head>
+
+<body>
+  
+  <div class="tlock">
+    <div class="tlock__img">
+      <div class="canvas">
+        <canvas id="c"></canvas>
+      </div>
+      <button id="button__tlock_open">Ok</button>
+      <button id="button__tlock_close">Close</button>
+      <button id="button__tlock_orange">Orange</button>
+    </div>
+    <div class="tlock__composition">
+      <li>
+        <a href="#" id="tlock__composition_bolt">bolt</a>
+      </li>
+      <li>
+        <a href="#" id="tlock__composition_gaika">gaika</a>
+      </li>
+    </div>
+  </div>
+
+
+  <script src="<%- assetFingerprint('/javascripts/three.js') %>" ></script>
+  <script src="<%- assetFingerprint('/javascripts/threex.domevents.js') %>" ></script>
+  <script src="<%- assetFingerprint('/javascripts/mytests/tlock.js') %>" type="module"></script>
+</body>
+
+</html>
